@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 1600px;
+  height: 800px;
+
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(./images/background2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background {
+  background-image: linear-gradient(#97d4f0, #f3f7ec);
+  height: 905px;
+}
+
+header {
+  padding-top: 15px;
+  //  text-align: center;
+}
+header img {
+  width: 300px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/dungeon.png);
+  background-size: 600px 400px;
+  background-repeat: no-repeat;
+
+  border: 4px solid #1d55c3;
+  height: 400px;
+  width: 600px;
+  /* width: 1000px; */
+  margin-bottom: 30px;
+}
+#img1 {
+  //  width: 5%;
+  transform: scale(2);
+  margin-right: 120px;
+  margin-top: 150px;
+}
+#img2 {
+  transform: scale(2);
+  margin-top: 150px;
+  //  width: 100px;
+}
+
+#select_pet {
+  font-size: 16px;
+  padding: 3px;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 550;
+  padding: 3px;
+}
