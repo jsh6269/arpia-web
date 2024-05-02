@@ -42,6 +42,7 @@ header img {
   justify-content: center;
   align-items: center;
   background-image: url(./background/dungeon1.png);
+  background-color: black;
   background-size: 600px 400px;
   background-repeat: no-repeat;
 

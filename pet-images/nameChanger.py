@@ -33,8 +33,11 @@ actionLst = [
 ]
 intent = 0
 for file in fileList:
-    print(file)
+#    print(file)
     newName = "./"+file.split("\\")[1]+"/"+actionLst[intent]+".gif"
-    os.rename(file, newName)
+    try:
+        os.rename(file, newName)
+    except:
+        pass
     intent = (intent + 1) % len(actionLst)
     
