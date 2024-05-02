@@ -9,7 +9,7 @@
   <div class="background">
     <div class="wrapper">
       <header>
-        <img src="./background/title.png" />
+        <img src="./background/title.png" onclick="location.reload();" />
       </header>
       <body>
         <div class="container">
@@ -30,7 +30,7 @@
               <option value="ice">얼음 정령</option>
               <option value="earth">대지 정령</option>
               <option value="dog">강아지</option>
-              <option value="babyEagle">아기 독수리</option>
+              <option value="babyEagle" selected>아기 독수리</option>
               <option value="turtle">거북이</option>
               <option value="fightDog">불량견</option>
               <option value="woodDoll">나무 인형</option>
@@ -91,6 +91,20 @@
               <option value="colosseum">콜로세움</option>
             </select>
           </form>
+          <div id="button-container">
+            <button id="idle" type="submit">idle</button>
+            <button id="stand" type="submit">stand</button>
+            <button id="front" type="submit">front</button>
+            <button id="back" type="submit">back</button>
+            <button id="moveFront" type="submit">moveFront</button>
+            <button id="moveSide" type="submit">moveSide</button>
+            <button id="moveBack" type="submit">moveBack</button>
+            <button id="spellCast" type="submit">spell</button>
+            <button id="hit" type="submit">hit</button>
+            <button id="victory" type="submit">victory</button>
+            <button id="dead" type="submit">dead</button>
+            <button id="all" type="submit">all</button>
+          </div>
           <!-- <button type="submit">제출</button> -->
         </div>
         <script src="./arpia.js"></script>

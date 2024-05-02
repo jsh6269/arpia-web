@@ -3,30 +3,18 @@ const selectPet = document.querySelector("#select_pet");
 const selectBg = document.querySelector("#select_bg");
 
 const actionLst = [
-  "stand1",
-  "front1",
-  "back1",
-  "moveFront1",
-  "moveSide1",
-  "moveBack1",
-  "idle1",
-  "spellCast1",
-  "hit1",
-  "victory1",
-  "dead1",
-  "all1",
-  "stand2",
-  "front2",
-  "back2",
-  "moveFront2",
-  "moveSide2",
-  "moveBack2",
-  "idle2",
-  "spellCast2",
-  "hit2",
-  "victory2",
-  "dead2",
-  "all2",
+  "stand",
+  "front",
+  "back",
+  "moveFront",
+  "moveSide",
+  "moveBack",
+  "idle",
+  "spellCast",
+  "hit",
+  "victory",
+  "dead",
+  "all",
 ];
 
 const petEventHandler = (e) => {
@@ -47,6 +35,22 @@ const bgEventHandler = (e) => {
   document.getElementsByClassName("image-container")[0].style.backgroundImage =
     "url(./background/" + text + ".png)";
 };
+
+const buttonHandler = (e, str) => {
+  e.preventDefault();
+  if (selectPet.value != "none") {
+    document.getElementById("img1").src =
+      "./pet-images/" + selectPet.value + "/" + str + "1.gif";
+    document.getElementById("img2").src =
+      "./pet-images/" + selectPet.value + "/" + str + "2.gif";
+  }
+};
+
+actionLst.forEach((str) => {
+  document.getElementById(str).addEventListener("click", (e) => {
+    buttonHandler(e, str);
+  });
+});
 
 combo1.addEventListener("change", petEventHandler);
 combo2.addEventListener("change", bgEventHandler);
