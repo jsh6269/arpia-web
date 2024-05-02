@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 .wrapper {
   margin: 0 auto;
   width: 1600px;
@@ -11,13 +12,13 @@
       rgba(255, 255, 255, 0.1),
       rgba(255, 255, 255, 0.5)
     ),
-    url(./images/background2.png);
+    url(./background/background2.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .background {
-  background-image: linear-gradient(#97d4f0, #f3f7ec);
+  background-image: linear-gradient(#97d4f0, #f3f7ef);
   height: 905px;
 }
 
@@ -25,19 +26,22 @@ header {
   padding-top: 15px;
   //  text-align: center;
 }
+
 header img {
   width: 300px;
 }
+
 .container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./images/dungeon.png);
+  background-image: url(./background/dungeon1.png);
   background-size: 600px 400px;
   background-repeat: no-repeat;
 
@@ -47,6 +51,7 @@ header img {
   /* width: 1000px; */
   margin-bottom: 30px;
 }
+
 #img1 {
   //  width: 5%;
   transform: scale(2);
@@ -62,10 +67,52 @@ header img {
 #select_pet {
   font-size: 16px;
   padding: 3px;
+  margin-left: 30px;
+}
+
+#select_bg {
+  font-size: 16px;
+  padding: 3px;
+}
+
+.label {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 1000;
 }
 
 button {
   font-size: 14px;
   font-weight: 550;
   padding: 3px;
+}
+
+#combo1 {
+  margin-right: 150px;
+  z-index: 100;
+}
+
+#combo2 {
+  margin-top: 35px;
+  margin-right: 186px;
+}
+
+select {
+  position: absolute;
+  width: 134px;
+  //  transform: translate(-50%, -50%);
+}
+
+select:focus {
+  width: 134px;
+  outline: none;
+}
+
+#select_bg {
+  //  position: absolute;
+  margin-left: 48px;
+}
+
+#lb {
+  position: absolute;
 }

@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./arpia.css" />
-    <title>Arpia</title>
+    <title>아르피아</title>
   </head>
   <div class="background">
     <div class="wrapper">
       <header>
-        <img src="./images/title.png" />
+        <img src="./background/title.png" />
       </header>
       <body>
         <div class="container">
           <section class="image-container">
-            <img id="img1" src="./images/babyEagle/idle1.gif" />
-            <img id="img2" src="./images/babyEagle/idle2.gif" />
+            <img id="img1" src="./pet-images/babyEagle/idle1.gif" />
+            <img id="img2" src="./pet-images/babyEagle/idle2.gif" />
           </section>
-          <form id="combo">
+          <form id="combo1">
+            <p class="label">펫:</p>
             <select
               id="select_pet"
               onfocus="this.size=10;"
@@ -80,6 +81,14 @@
               <option value="poisonFish">뽁뽁이</option>
               <!-- <option value="raddish">무</option>
               <option value="et">ET</option> -->
+            </select>
+          </form>
+          <form id="combo2">
+            <p id="lb" class="label">배경:</p>
+            <select id="select_bg">
+              <option value="dungeon1">던전1</option>
+              <option value="dungeon2">던전2</option>
+              <option value="colosseum">콜로세움</option>
             </select>
           </form>
           <!-- <button type="submit">제출</button> -->

@@ -1,5 +1,6 @@
-const combo = document.querySelector("#combo");
+const combo1 = document.querySelector("#combo1");
 const selectPet = document.querySelector("#select_pet");
+const selectBg = document.querySelector("#select_bg");
 
 const actionLst = [
   "stand1",
@@ -28,16 +29,24 @@ const actionLst = [
   "all2",
 ];
 
-const eventHandler = (e) => {
+const petEventHandler = (e) => {
   e.preventDefault();
   const text = selectPet.value;
   if (text == "none") {
     document.getElementById("img1").src = "";
     document.getElementById("img2").src = "";
   } else {
-    document.getElementById("img1").src = "./images/" + text + "/idle1.gif";
-    document.getElementById("img2").src = "./images/" + text + "/idle2.gif";
+    document.getElementById("img1").src = "./pet-images/" + text + "/idle1.gif";
+    document.getElementById("img2").src = "./pet-images/" + text + "/idle2.gif";
   }
 };
 
-combo.addEventListener("change", eventHandler);
+const bgEventHandler = (e) => {
+  e.preventDefault();
+  const text = selectBg.value;
+  document.getElementsByClassName("image-container")[0].style.backgroundImage =
+    "url(./background/" + text + ".png)";
+};
+
+combo1.addEventListener("change", petEventHandler);
+combo2.addEventListener("change", bgEventHandler);
