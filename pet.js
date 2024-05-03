@@ -17,8 +17,11 @@ const actionLst = [
   "all",
 ];
 
+let str = "idle";
+
 const petEventHandler = (e) => {
   e.preventDefault();
+  str = "idle";
   const text = selectPet.value;
   img1.style.marginTop = "150px";
   img2.style.marginTop = text != "redCandy" ? "150px" : "120px";
@@ -41,8 +44,6 @@ const bgEventHandler = (e) => {
 
 const img1 = document.getElementById("img1");
 const img2 = document.getElementById("img2");
-
-let str = "idle";
 
 function check() {
   if (selectPet.value == "babyEagle" && (str == "spellCast" || str == "all")) {
