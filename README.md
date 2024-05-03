@@ -1,3 +1,3 @@
-# Arpia: pets  
-I love pets...  
-=> https://jsh6269.github.io/arpia-pet
+# Arpia: web  
+I love arpia...  
+=> https://jsh6269.github.io/arpia-web
