@@ -23,7 +23,7 @@
 
 .background {
   background-image: linear-gradient(#97d4f0, #f3f7ef);
-  height: 1130px;
+  height: 1005px;
 }
 
 header {
@@ -34,4 +34,29 @@ header {
 
 header img {
   width: 400px;
+}
+@font-face {
+  font-family: "Danjo-bold-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+#menu {
+  margin: 0 auto;
+  padding: 50px;
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+#menu a {
+  font: Danjo-bold-Regular;
+  font-weight: bold;
+  font-size: 35px;
+  text-decoration: none;
+  color: black;
 }
