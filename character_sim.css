@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-use-select: none;
+  user-select: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1750px;
+  height: 800px;
+
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(./background/background2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background {
+  background-image: linear-gradient(#97d4f0, #f3f7ef);
+  height: 1130px;
+}
+
+header {
+  padding-top: 15px;
+  //  text-align: center;
+}
+
+header img {
+  width: 300px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./background/dungeon1.png);
+  background-color: black;
+  background-size: 600px 400px;
+  background-repeat: no-repeat;
+
+  border: 4px solid #1d55c3;
+  height: 400px;
+  width: 600px;
+  /* width: 1000px; */
+  margin-bottom: 30px;
+}
+
+#img1 {
+  //  width: 5%;
+  transform: scale(2);
+  margin-top: 120px;
+}
+
+#select_pet {
+  font-size: 16px;
+  padding: 3px;
+  margin-left: 30px;
+}
+
+#select_bg {
+  font-size: 16px;
+  padding: 3px;
+}
+
+.label {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 1000;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 550;
+  padding: 3px;
+}
+
+#combo1 {
+  margin-right: 150px;
+  z-index: 100;
+}
+
+#combo2 {
+  margin-top: 35px;
+  margin-right: 186px;
+}
+
+select {
+  position: absolute;
+  width: 134px;
+  //  transform: translate(-50%, -50%);
+}
+
+select:focus {
+  width: 134px;
+  outline: none;
+}
+
+#select_bg {
+  //  position: absolute;
+  margin-left: 48px;
+}
+
+#lb {
+  width: 44px;
+  position: absolute;
+}
+
+#victory {
+  margin-top: 50px;
+}
+
+#button-container {
+  margin-top: 5px;
+}
+
+div button {
+  padding: 4px;
+}
