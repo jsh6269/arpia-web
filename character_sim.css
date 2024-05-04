@@ -66,7 +66,7 @@ header img {
 #select_chr {
   font-size: 16px;
   padding: 3px;
-  margin-left: 30px;
+  margin-left: 65px;
 }
 
 #select_bg {
@@ -87,7 +87,7 @@ button {
 }
 
 #combo1 {
-  margin-right: 150px;
+  margin-right: 220px;
   z-index: 100;
 }
 

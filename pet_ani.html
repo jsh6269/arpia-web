@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./pet_ani.css" />
+    <title>아르피아</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="wrapper">
+        <header>
+          <a href="index.html"><img src="./background/title.png" /></a>
+        </header>
+        <section
+          id="charSel"
+          style="background-color: rgba(255, 255, 255, 0.7)"
+        >
+          <br />
+          <a
+            style="font-size: 25px; padding: 25px; text-decoration: none"
+            href="./pet_illust.html"
+            >▷일러스트</a
+          >
+          <a
+            style="font-size: 25px; padding: 25px; text-decoration: none"
+            href="./pet_ani.html"
+            >▷IDLE 애니메이션</a
+          >
+          <a
+            style="font-size: 25px; padding: 25px; text-decoration: none"
+            href="./pet.html"
+            >▷시뮬레이터</a
+          >
+          <div style="padding: 25px; padding-top: 1px">
+            <script language="javascript">
+              names = new Array(
+                "불꽃 정령",
+                "얼음 정령",
+                "대지 정령",
+                "아기 독수리",
+                "강아지",
+                "고양이",
+                "아이스크림",
+                "연지풀",
+                "조개",
+                "캔디걸",
+                "쪼파맨",
+                "불량견",
+                "두더지",
+                "독나방",
+                "펭귄",
+                "베개",
+                "누더기 인형",
+                "부두 인형",
+                "나무 인형",
+                "거북이",
+                "토끼",
+                "포인",
+                "카드킹",
+                "카드퀸",
+                "알파 1호",
+                "알파 2호",
+                "알파 3호",
+                "알파 4호",
+                "알파 5호",
+                "애플링",
+                "백만둥이",
+                "삐비빅",
+                "??",
+                "카무",
+                "캐비",
+                "큐빅",
+                "쿠카",
+                "어스돈",
+                "ET",
+                "완자님",
+                "그린빈",
+                "핑크빈",
+                "밥양",
+                "판판",
+                "뽁뽁이",
+                "무",
+                "루달프",
+                "깜짝상자",
+                "쉐도우",
+                "샤크룬",
+                "미양이",
+                "달팡",
+                "어금니요정",
+                "불카노",
+                "&nbsp&nbsp&nbsp코코"
+              );
+              character = new Array(
+                "pet-images\\fire\\idle1.gif",
+                "pet-images\\fire\\idle2.gif",
+                "pet-images\\ice\\idle1.gif",
+                "pet-images\\ice\\idle2.gif",
+                "pet-images\\earth\\idle1.gif",
+                "pet-images\\earth\\idle2.gif",
+                "pet-images\\babyEagle\\idle1.gif",
+                "pet-images\\babyEagle\\idle2.gif",
+                "pet-images\\dog\\idle1.gif",
+                "pet-images\\dog\\idle2.gif",
+                "pet-images\\cat\\idle1.gif",
+                "pet-images\\cat\\idle2.gif",
+                "pet-images\\icecream\\idle1.gif",
+                "pet-images\\icecream\\idle2.gif",
+                "pet-images\\flower\\idle1.gif",
+                "pet-images\\flower\\idle2.gif",
+                "pet-images\\clam\\idle1.gif",
+                "pet-images\\clam\\idle2.gif",
+                "pet-images\\redCandy\\idle1.gif",
+                "pet-images\\redCandy\\idle2.gif",
+                "pet-images\\blueCandy\\idle1.gif",
+                "pet-images\\blueCandy\\idle2.gif",
+                "pet-images\\fightDog\\idle1.gif",
+                "pet-images\\fightDog\\idle2.gif",
+                "pet-images\\moll\\idle1.gif",
+                "pet-images\\moll\\idle2.gif",
+                "pet-images\\moth\\idle1.gif",
+                "pet-images\\moth\\idle2.gif",
+                "pet-images\\penguin\\idle1.gif",
+                "pet-images\\penguin\\idle2.gif",
+                "pet-images\\pillow\\idle1.gif",
+                "pet-images\\pillow\\idle2.gif",
+                "pet-images\\ragDoll\\idle1.gif",
+                "pet-images\\ragDoll\\idle2.gif",
+                "pet-images\\curseDoll\\idle1.gif",
+                "pet-images\\curseDoll\\idle2.gif",
+                "pet-images\\woodDoll\\idle1.gif",
+                "pet-images\\woodDoll\\idle2.gif",
+                "pet-images\\turtle\\idle1.gif",
+                "pet-images\\turtle\\idle2.gif",
+                "pet-images\\rabbit\\idle1.gif",
+                "pet-images\\rabbit\\idle2.gif",
+                "pet-images\\poin\\idle1.gif",
+                "pet-images\\poin\\idle2.gif",
+                "pet-images\\cardKing\\idle1.gif",
+                "pet-images\\cardKing\\idle2.gif",
+                "pet-images\\cardQueen\\idle1.gif",
+                "pet-images\\cardQueen\\idle2.gif",
+                "pet-images\\alpha1\\idle1.gif",
+                "pet-images\\alpha1\\idle2.gif",
+                "pet-images\\alpha2\\idle1.gif",
+                "pet-images\\alpha2\\idle2.gif",
+                "pet-images\\alpha3\\idle1.gif",
+                "pet-images\\alpha3\\idle2.gif",
+                "pet-images\\alpha4\\idle1.gif",
+                "pet-images\\alpha4\\idle2.gif",
+                "pet-images\\alpha5\\idle1.gif",
+                "pet-images\\alpha5\\idle2.gif",
+                "pet-images\\appling\\idle1.gif",
+                "pet-images\\appling\\idle2.gif",
+                "pet-images\\baekman\\idle1.gif",
+                "pet-images\\baekman\\idle2.gif",
+                "pet-images\\bibi\\idle1.gif",
+                "pet-images\\bibi\\idle2.gif",
+                "pet-images\\cactus\\idle1.gif",
+                "pet-images\\cactus\\idle2.gif",
+                "pet-images\\camu\\idle1.gif",
+                "pet-images\\camu\\idle2.gif",
+                "pet-images\\crab\\idle1.gif",
+                "pet-images\\crab\\idle2.gif",
+                "pet-images\\cubic\\idle1.gif",
+                "pet-images\\cubic\\idle2.gif",
+                "pet-images\\cuca\\idle1.gif",
+                "pet-images\\cuca\\idle2.gif",
+                "pet-images\\earthdon\\idle1.gif",
+                "pet-images\\earthdon\\idle2.gif",
+                "pet-images\\et\\idle1.gif",
+                "pet-images\\et\\idle2.gif",
+                "pet-images\\frog\\idle1.gif",
+                "pet-images\\frog\\idle2.gif",
+                "pet-images\\greenBean\\idle1.gif",
+                "pet-images\\greenBean\\idle2.gif",
+                "pet-images\\pinkBean\\idle1.gif",
+                "pet-images\\pinkBean\\idle2.gif",
+                "pet-images\\kimbap\\idle1.gif",
+                "pet-images\\kimbap\\idle2.gif",
+                "pet-images\\panda\\idle1.gif",
+                "pet-images\\panda\\idle2.gif",
+                "pet-images\\poisonFish\\idle1.gif",
+                "pet-images\\poisonFish\\idle2.gif",
+                "pet-images\\raddish\\idle1.gif",
+                "pet-images\\raddish\\idle2.gif",
+                "pet-images\\rudolf\\idle1.gif",
+                "pet-images\\rudolf\\idle2.gif",
+                "pet-images\\secretBox\\idle1.gif",
+                "pet-images\\secretBox\\idle2.gif",
+                "pet-images\\shadow\\idle1.gif",
+                "pet-images\\shadow\\idle2.gif",
+                "pet-images\\sharkroon\\idle1.gif",
+                "pet-images\\sharkroon\\idle2.gif",
+                "pet-images\\sheep\\idle1.gif",
+                "pet-images\\sheep\\idle2.gif",
+                "pet-images\\snail\\idle1.gif",
+                "pet-images\\snail\\idle2.gif",
+                "pet-images\\tooth\\idle1.gif",
+                "pet-images\\tooth\\idle2.gif",
+                "pet-images\\volcano\\idle1.gif",
+                "pet-images\\volcano\\idle2.gif",
+                "pet-images\\coco\\idle1.gif",
+                "pet-images\\coco\\idle2.gif"
+              );
+              for (i = 0; i < character.length; i++) {
+                let lastIndex = character[i].lastIndexOf("pet-images");
+                let name = character[i].substring(lastIndex + 11).slice(0, -10);
+                document.write(
+                  `<figure><img src="${character[i]}"/><figcaption>${
+                    i % 2 ? "&nbsp" : names[i / 2]
+                  }</figcaption></figure>`
+                );
+              }
+            </script>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
