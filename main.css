@@ -50,19 +50,20 @@ header img {
 }
 #menu {
   margin: 0 auto;
-  padding: 50px;
+  //  padding: 50px;
   width: 380px;
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-top: 130px;
+  margin-top: 110px;
 }
 
 #menu a {
   font: Danjo-bold-Regular;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 35px;
   text-decoration: none;
   color: black;
+  margin-top: 50px;
 }
