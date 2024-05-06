@@ -8,7 +8,7 @@
 }
 
 .wrapper {
-  margin: 0 auto;
+  /* margin: 0 auto;
   width: 1750px;
   height: 800px;
 
@@ -18,7 +18,12 @@
     ),
     url(./background/background2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  margin: 0 auto;
+  width: 1750px;
+  height: 1863px;
+  background: #fdf6d6 url(./background/background2.png) no-repeat center 0;
+  background-size: 1750px;
 }
 
 .background {

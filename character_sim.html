@@ -6,153 +6,177 @@
     <link rel="stylesheet" type="text/css" href="./character_sim.css" />
     <title>아르피아</title>
   </head>
-  <div class="background">
-    <div class="wrapper">
-      <header>
-        <a href="index.html"><img src="./background/title.png" /></a>
-      </header>
-      <body>
-        <div class="container">
-          <section class="image-container">
-            <img id="img1" src="./animation/npc_001_도트_쇼우/idle.gif" />
-          </section>
-          <form id="combo1">
-            <p class="label">캐릭터:</p>
-            <select
-              id="select_chr"
-              onfocus="this.size=10;"
-              onblur="this.size=1;"
-              onchange="this.size=1; this.blur();"
-            >
-              <option value="none">=== 선택 ===</option>
-              <option value="npc_001_도트_쇼우" selected>쇼우</option>
-              <script language="javascript">
-                character = new Array(
-                  // "npc_001_도트_쇼우",
-                  "npc_002_도트_히나",
-                  "npc_003_도트_케스노",
-                  "npc_004_도트_소피아",
-                  "npc_005_도트_아이작",
-                  "npc_006_도트_미나",
-                  "npc_007_도트_스콜",
-                  "npc_008_도트_나오미",
-                  "npc_009_도트_아론",
-                  "npc_010_도트_에스타",
-                  "npc_011_도트_료마",
-                  "npc_012_도트_이슈비케",
-                  "npc_013_도트_에드워드 장군",
-                  "npc_014_도트_케트린",
-                  "npc_015_도트_브루터스",
-                  "npc_016_도트_안토니오",
-                  "npc_017_도트_오당카",
-                  "npc_018_도트_루돌프",
-                  "npc_019_도트_레오나",
-                  "npc_020_도트_셀레니스",
-                  "npc_021_도트_할라할라",
-                  "npc_022_도트_쭐루쭐루",
-                  "npc_023_도트_발디",
-                  "npc_024_도트_코비",
-                  "npc_025_도트_쟈칼",
-                  "npc_026_도트_도비엘",
-                  "npc_027_도트_가루다",
-                  "npc_028_도트_시바",
-                  "npc_029_도트_빅",
-                  "npc_030_도트_휴",
-                  "npc_031_도트_미노타우르스",
-                  "npc_032_도트_데빌 아이",
-                  "npc_034_도트_헝거",
-                  "npc_035_도트_칠리",
-                  "npc_036_도트_더글라스",
-                  "npc_037_도트_머피",
-                  "npc_038_도트_멜리",
-                  "npc_039_도트_부마",
-                  "npc_040_도트_압둘라",
-                  "npc_041_도트_카이",
-                  "npc_042_도트_다킬",
-                  "npc_053_도트_글루글루",
-                  "npc_055_도트_샤이아",
-                  "npc_073_도트_조지",
-                  "npc_074_도트_해골병사",
-                  "npc_075_도트_우탄",
-                  "npc_076_도트_빌리",
-                  "npc_077_도트_아델리오",
-                  "npc_078_도트_아다",
-                  "npc_080_도트_앨리카",
-                  "npc_081_도트_트리니",
-                  "npc_082_도트_젤리나",
-                  "npc_083_도트_실베스터",
-                  "npc_084_도트_토마스",
-                  // "npc_085_도트_티니",
-                  "npc_086_도트_여우B2",
-                  "npc_087_도트_여우B1",
-                  // "npc_088_도트_실비아",
-                  "npc_089_도트_스니퍼",
-                  // "npc_090_도트_스텔라",
-                  // "npc_091_도트_써니",
-                  // "npc_092_도트_제니아",
-                  // "npc_093_도트_사샤",
-                  "npc_094_도트_바니",
-                  "npc_095_도트_앨비노",
-                  "npc_096_도트_스포티",
-                  "npc_097_도트_토끼02",
-                  "npc_098_도트_토끼01",
-                  "npc_099_도트_세브리노",
-                  "npc_100_도트_스칼렛",
-                  // "npc_101_도트_로자",
-                  "npc_102_도트_리오",
-                  "npc_103_도트_푸키",
-                  "npc_104_도트_핑키",
-                  "npc_105_도트_패트릭",
-                  "npc_106_도트_파벨",
-                  "npc_107_도트_몰리",
-                  "npc_108_도트_미키",
-                  "npc_109_도트_루시",
-                  "npc_110_도트_로티",
-                  "npc_111_도트_로이드",
-                  "npc_112_도트_레오",
-                  "npc_113_도트_코리",
-                  "npc_115_도트_케리",
-                  "npc_116_도트_제스퍼",
-                  "npc_117_도트_갈리",
-                  "npc_158_도트_우가우가",
-                  "npc_159_도트_밴드두더지",
-                  "npc_172_도트_봉봉이"
-                );
-                for (i = 0; i < character.length; i++) {
-                  let lastIndex = character[i].lastIndexOf("_");
-                  let name = character[i].substring(lastIndex + 1);
-                  document.write(
-                    `<option value=${character[i]}>${name}</option>`
+  <body>
+    <div class="background">
+      <div class="wrapper">
+        <header>
+          <a href="index.html"><img src="./background/title.png" /></a>
+        </header>
+        <section
+          id="charSel"
+          style="background-color: rgba(255, 255, 255, 0.6)"
+        >
+          <br />
+          <a
+            style="font-size: 25px; padding: 25px; text-decoration: none"
+            href="./character.html"
+            >▷일러스트</a
+          >
+          <a
+            style="font-size: 25px; padding: 25px; text-decoration: none"
+            href="./character_ani.html"
+            >▷IDLE 애니메이션</a
+          >
+          <a
+            style="font-size: 25px; padding: 25px; text-decoration: none"
+            href="./character_sim.html"
+            >▷시뮬레이터</a
+          >
+          <div class="container" style="margin-top: 100px">
+            <section class="image-container">
+              <img id="img1" src="./animation/npc_001_도트_쇼우/idle.gif" />
+            </section>
+            <form id="combo1">
+              <p class="label">캐릭터:</p>
+              <select
+                id="select_chr"
+                onfocus="this.size=10;"
+                onblur="this.size=1;"
+                onchange="this.size=1; this.blur();"
+              >
+                <option value="none">=== 선택 ===</option>
+                <option value="npc_001_도트_쇼우" selected>쇼우</option>
+                <script language="javascript">
+                  character = new Array(
+                    // "npc_001_도트_쇼우",
+                    "npc_002_도트_히나",
+                    "npc_003_도트_케스노",
+                    "npc_004_도트_소피아",
+                    "npc_005_도트_아이작",
+                    "npc_006_도트_미나",
+                    "npc_007_도트_스콜",
+                    "npc_008_도트_나오미",
+                    "npc_009_도트_아론",
+                    "npc_010_도트_에스타",
+                    "npc_011_도트_료마",
+                    "npc_012_도트_이슈비케",
+                    "npc_013_도트_에드워드 장군",
+                    "npc_014_도트_케트린",
+                    "npc_015_도트_브루터스",
+                    "npc_016_도트_안토니오",
+                    "npc_017_도트_오당카",
+                    "npc_018_도트_루돌프",
+                    "npc_019_도트_레오나",
+                    "npc_020_도트_셀레니스",
+                    "npc_021_도트_할라할라",
+                    "npc_022_도트_쭐루쭐루",
+                    "npc_023_도트_발디",
+                    "npc_024_도트_코비",
+                    "npc_025_도트_쟈칼",
+                    "npc_026_도트_도비엘",
+                    "npc_027_도트_가루다",
+                    "npc_028_도트_시바",
+                    "npc_029_도트_빅",
+                    "npc_030_도트_휴",
+                    "npc_031_도트_미노타우르스",
+                    "npc_032_도트_데빌 아이",
+                    "npc_034_도트_헝거",
+                    "npc_035_도트_칠리",
+                    "npc_036_도트_더글라스",
+                    "npc_037_도트_머피",
+                    "npc_038_도트_멜리",
+                    "npc_039_도트_부마",
+                    "npc_040_도트_압둘라",
+                    "npc_041_도트_카이",
+                    "npc_042_도트_다킬",
+                    "npc_053_도트_글루글루",
+                    "npc_055_도트_샤이아",
+                    "npc_073_도트_조지",
+                    "npc_074_도트_해골병사",
+                    "npc_075_도트_우탄",
+                    "npc_076_도트_빌리",
+                    "npc_077_도트_아델리오",
+                    "npc_078_도트_아다",
+                    "npc_080_도트_앨리카",
+                    "npc_081_도트_트리니",
+                    "npc_082_도트_젤리나",
+                    "npc_083_도트_실베스터",
+                    "npc_084_도트_토마스",
+                    // "npc_085_도트_티니",
+                    "npc_086_도트_여우B2",
+                    "npc_087_도트_여우B1",
+                    // "npc_088_도트_실비아",
+                    "npc_089_도트_스니퍼",
+                    // "npc_090_도트_스텔라",
+                    // "npc_091_도트_써니",
+                    // "npc_092_도트_제니아",
+                    // "npc_093_도트_사샤",
+                    "npc_094_도트_바니",
+                    "npc_095_도트_앨비노",
+                    "npc_096_도트_스포티",
+                    "npc_097_도트_토끼02",
+                    "npc_098_도트_토끼01",
+                    "npc_099_도트_세브리노",
+                    "npc_100_도트_스칼렛",
+                    // "npc_101_도트_로자",
+                    "npc_102_도트_리오",
+                    "npc_103_도트_푸키",
+                    "npc_104_도트_핑키",
+                    "npc_105_도트_패트릭",
+                    "npc_106_도트_파벨",
+                    "npc_107_도트_몰리",
+                    "npc_108_도트_미키",
+                    "npc_109_도트_루시",
+                    "npc_110_도트_로티",
+                    "npc_111_도트_로이드",
+                    "npc_112_도트_레오",
+                    "npc_113_도트_코리",
+                    "npc_115_도트_케리",
+                    "npc_116_도트_제스퍼",
+                    "npc_117_도트_갈리",
+                    "npc_158_도트_우가우가",
+                    "npc_159_도트_밴드두더지",
+                    "npc_172_도트_봉봉이"
                   );
-                }
-              </script>
-            </select>
-          </form>
-          <form id="combo2">
-            <p id="lb" class="label">배경:</p>
-            <select id="select_bg">
-              <option value="dungeon1">던전1</option>
-              <option value="dungeon2">던전2</option>
-              <option value="colosseum">콜로세움</option>
-              <option value="beach">해변</option>
-            </select>
-          </form>
-          <div id="button-container" style="margin-top: 55px">
-            <button id="idle" type="submit">idle</button>
-            <button id="moveFront" type="submit">moveFront</button>
-            <button id="moveSide" type="submit">moveSide</button>
-            <button id="moveBack" type="submit">moveBack</button>
-            <button id="attack" type="submit">attack</button>
-            <button id="magic" type="submit">magic</button>
-            <button id="hit" type="submit">hit</button>
-            <button id="useItem" type="submit">useItem</button>
-            <button id="win" type="submit">win</button>
-            <button id="dead" type="submit">dead</button>
+                  for (i = 0; i < character.length; i++) {
+                    let lastIndex = character[i].lastIndexOf("_");
+                    let name = character[i].substring(lastIndex + 1);
+                    document.write(
+                      `<option value=${character[i]}>${name}</option>`
+                    );
+                  }
+                </script>
+              </select>
+            </form>
+            <form id="combo2">
+              <p id="lb" class="label">배경:</p>
+              <select id="select_bg">
+                <option value="dungeon1">던전1</option>
+                <option value="dungeon2">던전2</option>
+                <option value="colosseum">콜로세움</option>
+                <option value="beach">해변</option>
+              </select>
+            </form>
+            <div
+              id="button-container"
+              style="margin-top: 55px; margin-bottom: 240px"
+            >
+              <button id="idle" type="submit">idle</button>
+              <button id="moveFront" type="submit">moveFront</button>
+              <button id="moveSide" type="submit">moveSide</button>
+              <button id="moveBack" type="submit">moveBack</button>
+              <button id="attack" type="submit">attack</button>
+              <button id="magic" type="submit">magic</button>
+              <button id="hit" type="submit">hit</button>
+              <button id="useItem" type="submit">useItem</button>
+              <button id="win" type="submit">win</button>
+              <button id="dead" type="submit">dead</button>
+            </div>
+            <!-- <button type="submit">제출</button> -->
           </div>
-          <!-- <button type="submit">제출</button> -->
-        </div>
-        <script src="./character_sim.js"></script>
-      </body>
+        </section>
+      </div>
     </div>
-  </div>
+  </body>
+  <script src="./character_sim.js"></script>
 </html>

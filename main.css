@@ -8,7 +8,7 @@
 }
 
 .wrapper {
-  margin: 0 auto;
+  /* margin: 0 auto;
   width: 1750px;
   height: 800px;
 
@@ -18,22 +18,27 @@
     ),
     url(./background/background2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  margin: 0 auto;
+  width: 1750px;
+  height: 100vh;
+  background: #fdf6d6 url(./background/background2.png) no-repeat center 0;
+  background-size: 1750px;
 }
 
 .background {
-  background-image: linear-gradient(#97d4f0, #f3f7ef);
-  height: 1005px;
+  background-image: linear-gradient(#97d4f0, #fdf6d6);
+  height: 100vh;
 }
 
 header {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 100px;
   //  text-align: center;
 }
 
 header img {
-  width: 400px;
+  width: 500px;
 }
 @font-face {
   font-family: "Danjo-bold-Regular";
@@ -50,7 +55,7 @@ header img {
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 130px;
 }
 
 #menu a {
