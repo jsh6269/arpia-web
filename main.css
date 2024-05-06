@@ -39,6 +39,7 @@ header {
 
 header img {
   width: 500px;
+  margin-left: 10px;
 }
 @font-face {
   font-family: "Danjo-bold-Regular";
@@ -50,7 +51,7 @@ header img {
 #menu {
   margin: 0 auto;
   padding: 50px;
-  width: 350px;
+  width: 380px;
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
   display: flex;
@@ -61,7 +62,7 @@ header img {
 #menu a {
   font: Danjo-bold-Regular;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 38px;
   text-decoration: none;
   color: black;
 }
