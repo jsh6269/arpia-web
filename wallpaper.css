@@ -21,7 +21,7 @@
   background-size: cover; */
   margin: 0 auto;
   width: 1750px;
-  height: 4614px;
+  height: 4743px;
   background: #fdf6d6 url(./background/background2.png) no-repeat center 0;
   background-size: 1750px;
 }
@@ -43,7 +43,7 @@ header img {
 }
 
 #charSel img {
-  max-width: 400px;
+  max-width: 416px;
   min-width: 100px;
   max-height: 385px;
   padding: 2px;
