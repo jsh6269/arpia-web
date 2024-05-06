@@ -6,109 +6,105 @@
     <link rel="stylesheet" type="text/css" href="./pet.css" />
     <title>아르피아</title>
   </head>
-  <div class="background">
-    <div class="wrapper">
-      <header>
-        <a href="index.html"><img src="./background/title.png" /></a>
-      </header>
-      <body>
-        <div class="container">
-          <section class="image-container">
-            <img id="img1" src="./pet-images/babyEagle/idle1.gif" />
-            <img id="img2" src="./pet-images/babyEagle/idle2.gif" />
-          </section>
-          <form id="combo1">
-            <p class="label">펫:</p>
-            <select
-              id="select_pet"
-              onfocus="this.size=10;"
-              onblur="this.size=1;"
-              onchange="this.size=1; this.blur();"
-            >
-              <option value="none">=== 선택 ===</option>
-              <option value="fire">불꽃 정령</option>
-              <option value="ice">얼음 정령</option>
-              <option value="earth">대지 정령</option>
-              <option value="dog">강아지</option>
-              <option value="babyEagle" selected>아기 독수리</option>
-              <option value="turtle">거북이</option>
-              <option value="fightDog">불량견</option>
-              <option value="woodDoll">나무 인형</option>
-              <option value="clam">조개</option>
-              <option value="rabbit">토끼</option>
-              <option value="penguin">펭귄</option>
-              <option value="cat">고양이</option>
-              <option value="curseDoll">부두인형</option>
-              <option value="ragDoll">누더기인형</option>
-              <option value="moll">두더지</option>
-              <option value="pillow">배게</option>
-              <option value="moth">독나방</option>
-              <option value="poin">포인</option>
-              <option value="flower">연지풀</option>
-              <option value="icecream">아이스바</option>
-              <option value="blueCandy">쪼파맨</option>
-              <option value="redCandy">캔디걸</option>
-              <option value="cactus">선디언</option>
-              <option value="alpha1">알피레인져1호</option>
-              <option value="alpha2">알피레인져2호</option>
-              <option value="alpha3">알피레인져3호</option>
-              <option value="alpha4">알피레인져4호</option>
-              <option value="alpha5">알피레인져5호</option>
-              <option value="coco">코코</option>
-              <option value="panda">판판</option>
-              <option value="volcano">볼키노</option>
-              <option value="crab">캐비</option>
-              <option value="earthdon">어스돈</option>
-              <option value="shadow">쉐도우</option>
-              <option value="frog">완자님</option>
-              <option value="sheep">미양이</option>
-              <option value="greenBean">그린빈</option>
-              <option value="pinkBean">핑크빈</option>
-              <option value="snail">달팡</option>
-              <option value="cardKing">카드킹</option>
-              <option value="cardQueen">카드퀸</option>
-              <option value="cuca">쿠카</option>
-              <option value="baekman">백만둥이</option>
-              <option value="tooth">어금니요정</option>
-              <option value="bibi">삐비빅</option>
-              <option value="kimbap">밥양</option>
-              <option value="cubic">큐빅</option>
-              <option value="sharkroon">샤크룬</option>
-              <option value="camu">카무</option>
-              <option value="secretBox">깜짝상자</option>
-              <option value="appling">애플링</option>
-              <option value="rudolf">루달프</option>
-              <option value="poisonFish">뽁뽁이</option>
-              <option value="et">ET</option>
-              <option value="raddish">무</option>
-            </select>
-          </form>
-          <form id="combo2">
-            <p id="lb" class="label">배경:</p>
-            <select id="select_bg">
-              <option value="dungeon1">던전1</option>
-              <option value="dungeon2">던전2</option>
-              <option value="colosseum">콜로세움</option>
-            </select>
-          </form>
-          <div id="button-container">
-            <button id="idle" type="submit">idle</button>
-            <button id="stand" type="submit">stand</button>
-            <button id="front" type="submit">front</button>
-            <button id="back" type="submit">back</button>
-            <button id="moveFront" type="submit">moveFront</button>
-            <button id="moveSide" type="submit">moveSide</button>
-            <button id="moveBack" type="submit">moveBack</button>
-            <button id="spellCast" type="submit">spell</button>
-            <button id="hit" type="submit">hit</button>
-            <button id="victory" type="submit">victory</button>
-            <button id="dead" type="submit">dead</button>
-            <button id="all" type="submit">all</button>
+  <body>
+    <div class="background">
+      <div class="wrapper">
+        <header>
+          <a href="index.html"><img src="./background/title.png" /></a>
+        </header>
+        <section
+          id="charSel"
+          style="background-color: rgba(255, 255, 255, 0.7)"
+        >
+          <br />
+          <a
+            style="font-size: 25px; padding: 25px; text-decoration: none"
+            href="./pet.html"
+            >▷일러스트</a
+          >
+          <a
+            style="font-size: 25px; padding: 25px; text-decoration: none"
+            href="./pet_ani.html"
+            >▷IDLE 애니메이션</a
+          >
+          <a
+            style="font-size: 25px; padding: 25px; text-decoration: none"
+            href="./pet_sim.html"
+            >▷시뮬레이터</a
+          >
+          <div style="padding: 25px; padding-bottom: 40px">
+            <figure>
+              <img src="./pet-illust/아르피아_불꽃펫.png" />
+              <figcaption>불꽃 정령</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/아르피아_얼음펫.png" />
+              <figcaption>얼음 정령</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/아르피아_대지펫.png" />
+              <figcaption>대지 정령</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/독수리펫.png" />
+              <figcaption>아기 독수리</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/나무펫.png" />
+              <figcaption>나무인형</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/나방펫.png" />
+              <figcaption>독나방</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/베게펫.png" />
+              <figcaption>베개</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/조개.png" />
+              <figcaption>조개</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./pet-illust/강아지펫.png" />
+              <figcaption>강아지</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/냐옹이펫.png" />
+              <figcaption>고양이</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/인형펫.png" />
+              <figcaption>누더기 인형</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/부두인형펫.png" />
+              <figcaption>부두인형</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/불량견펫.png" />
+              <figcaption>불량견</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/토끼펫.png" />
+              <figcaption>토끼</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/펭귄.png" />
+              <figcaption>펭귄</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/거북이.png" />
+              <figcaption>거북이</figcaption>
+            </figure>
+            <figure>
+              <img src="./pet-illust/두더지펫.png" />
+              <figcaption>두더지</figcaption>
+            </figure>
           </div>
-          <!-- <button type="submit">제출</button> -->
-        </div>
-        <script src="./pet.js"></script>
-      </body>
+        </section>
+      </div>
     </div>
-  </div>
+  </body>
 </html>
