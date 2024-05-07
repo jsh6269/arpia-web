@@ -21,14 +21,14 @@
   background-size: cover; */
   margin: 0 auto;
   width: 1750px;
-  height: 4743px;
+  height: 5152px;
   background: #fdf6d6 url(./background/background2.png) no-repeat center 0;
   background-size: 1750px;
 }
 
 .background {
   background-image: linear-gradient(#97d4f0, #f3f7ef);
-  height: 4800px;
+  height: 5200px;
 }
 
 header {
@@ -40,6 +40,10 @@ header {
 
 header img {
   width: 400px;
+}
+
+#charSel {
+  height: 4890px;
 }
 
 #charSel img {
