@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./map.css" />
+    <title>아르피아</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="wrapper">
+        <header>
+          <a href="index.html"><img src="./background/title.png" /></a>
+        </header>
+        <section
+          id="charSel"
+          style="background-color: rgba(255, 255, 255, 0.7)"
+        >
+          <br />
+          <a
+            style="font-size: 25px; padding: 25px; text-decoration: none"
+            href="./index.html"
+            >▷홈</a
+          >
+          <div style="padding: 25px">
+            <figure>
+              <img
+                src="./map/웨일라대륙.png"
+                style="
+                  max-width: 3500px;
+                  width: 1680px;
+                  max-height: 1800px;
+                  height: 1250px;
+                "
+              />
+              <figcaption>웨일라 대륙</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="./map/학교 지도.png"
+                style="
+                  max-width: 3500px;
+                  width: 1680px;
+                  max-height: 1800px;
+                  height: 1040px;
+                "
+              />
+              <figcaption>학교 지도</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="./map/학교_내부_지도.png"
+                style="
+                  max-width: 600px;
+                  width: 530px;
+                  max-height: 1500px;
+                  height: 600px;
+                "
+              />
+              <figcaption>학교 내부 지도</figcaption>
+            </figure>
+            <script language="javascript">
+              paper = new Array(
+                "학교내부 맵.png",
+                "지하 창고.png",
+                "지도1.webp",
+                "지도2.webp",
+                "펫센터.jpg",
+                "검은별클럽final.png",
+                "도서관.jpg",
+                "보일러실.png",
+                "식당.png",
+                "마법 재료실.png",
+                "화장실.png",
+                "상점가.jpg",
+                "항구마을 쥬다.png",
+                "난쟁이 광산.jpg",
+                "얼음마을.png",
+                "불꽃마을.jpg",
+                "대지마을.png",
+                "님펜.jpg",
+                "데런왕국.jpg",
+                "독수리마을.jpg",
+                "마법사의 도시.jpg",
+                "아수리아왕국.jpg",
+                "오당카.png",
+                "큐리어스 저택.jpg",
+                "미니룸.png",
+                "학교 지하.png",
+                "건강센터.png"
+              );
+              for (i = 0; i < paper.length; i++) {
+                let lastIndex = paper[i].lastIndexOf(".");
+                let name = paper[i].substring(0, lastIndex);
+                document.write(
+                  `<figure><img src="./map/${paper[i]}"/><figcaption>${name}</figcaption></figure>`
+                );
+              }
+            </script>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
